@@ -10,8 +10,8 @@
 
 ### 考虑JVM耗时
 
-bilibili@MacBook-Pro-107 ogv % ./gradlew :app:production:production-s
-ervant:test --tests "ogv.app.servant.production.facade.PlayletFacadeTest" --rerun-tasks --info | grep "耗时"
+```
+--rerun-tasks --info | grep "耗时"
     [耗时] 输入=测试短剧😀 -> **147 ms (147526209 ns)** 
     [耗时] 输入=测试短剧👩‍🚀，👨‍👩‍👧‍👦 -> 2 ms (2699791 ns)
     [耗时] 输入=测试短剧👋🏽 -> 2 ms (2383125 ns)
@@ -22,12 +22,12 @@ ervant:test --tests "ogv.app.servant.production.facade.PlayletFacadeTest" --reru
     [耗时] 输入=𪚥 -> 1 ms (1877291 ns)
     [耗时] 输入=💯 -> 1 ms (1942209 ns)
     [耗时] 输入=测试短剧❤ -> **1 ms (1476333 ns)**
+```
 
 ### 原始版本
 
-bilibili@MacBook-Pro-107 ogv % ./gradlew :app:production:production-s
-ervant:test --tests "ogv.app.servant.production.facade.PlayletFacadeT
-est" --rerun-tasks --info | grep "耗时"
+```
+--rerun-tasks --info | grep "耗时"
     [耗时] 输入=测试短剧😀 -> 2 ms (2841375 ns)
     [耗时] 输入=测试短剧👩‍🚀，👨‍👩‍👧‍👦 -> 2 ms (2515875 ns)
     [耗时] 输入=测试短剧👋🏽 -> 1 ms (1440000 ns)
@@ -38,11 +38,12 @@ est" --rerun-tasks --info | grep "耗时"
     [耗时] 输入=𪚥 -> 1 ms (1946334 ns)
     [耗时] 输入=💯 -> 2 ms (2390916 ns)
     [耗时] 输入=测试短剧❤ -> **1 ms (1074791 ns)**
+```
 
 ### emojis.csv
 
-bilibili@MacBook-Pro-107 ogv % ./gradlew :app:production:production-s
-ervant:test --tests "ogv.app.servant.production.facade.PlayletFacadeTest" --rerun-tasks --info | grep "耗时"
+```
+--rerun-tasks --info | grep "耗时"
     [耗时] 输入=测试短剧😀 -> 1 ms (1519417 ns)
     [耗时] 输入=测试短剧👩‍🚀，👨‍👩‍👧‍👦 -> 2 ms (2276541 ns)
     [耗时] 输入=测试短剧👋🏽 -> 3 ms (3949333 ns)
@@ -53,11 +54,12 @@ ervant:test --tests "ogv.app.servant.production.facade.PlayletFacadeTest" --reru
     [耗时] 输入=𪚥 -> 6 ms (6044459 ns)
     [耗时] 输入=💯 -> 3 ms (3031875 ns)
     [耗时] 输入=测试短剧❤ -> **1 ms (1670208 ns)**
+```
 
 ### emoji-mask.csv
 
-bilibili@MacBook-Pro-107 ogv % ./gradlew :app:production:production-s
-ervant:test --tests "ogv.app.servant.production.facade.PlayletFacadeTest" --rerun-tasks --info | grep "耗时"
+```
+--rerun-tasks --info | grep "耗时"
     [耗时] 输入=测试短剧😀 -> 1 ms (1597708 ns)
     [耗时] 输入=测试短剧👩‍🚀，👨‍👩‍👧‍👦 -> 1 ms (1289333 ns)
     [耗时] 输入=测试短剧👋🏽 -> 2 ms (2470459 ns)
@@ -68,6 +70,7 @@ ervant:test --tests "ogv.app.servant.production.facade.PlayletFacadeTest" --reru
     [耗时] 输入=𪚥 -> 3 ms (3857416 ns)
     [耗时] 输入=💯 -> 2 ms (2449625 ns)
     [耗时] 输入=测试短剧❤ -> **2 ms (2981291 ns)**
+```
 
 ## 数据来源
 
